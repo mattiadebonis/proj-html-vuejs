@@ -1,15 +1,21 @@
 <template>
     <main>
-        <P>Main della pagina</P>
+        <p>Main della pagina</p>
     </main>
 </template>
 
 <script>
-export default {
-    name: "Main"
-}
+
+    export default {
+        name: 'Main',
+    }
 </script>
 
-<style lang="sccs">
+<style lang="scss">
+  @import "../assets/styles/general.scss";
+
+  .flex{
+      display: flex;
+  }
 
 </style>

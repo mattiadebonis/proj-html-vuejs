@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Header />
+    <Header
+      :menuHeader = "menu"
+    />
     <Main />
     <Footer/>
   </div>
@@ -13,6 +15,20 @@ import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
+  data: function(){
+    return{
+      menu : [
+        "Home",
+        "Culinary history",
+        "Our team",
+        "Our menu",
+        "Take out", 
+        "Bulletin",
+        "Reservation",
+        "Carrello"
+      ]
+    }
+  },
   components: {
     Header,
     Main,
@@ -23,11 +39,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/styles/general.scss";
+  @import "./assets/styles/general.scss";
 
-#app{
-  margin: 0 auto;
-  width: 80%;
-}
+  #app{
+    margin: 0 auto;
+
+  }
 
 </style>

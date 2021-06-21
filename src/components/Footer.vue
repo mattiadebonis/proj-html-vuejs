@@ -1,15 +1,18 @@
 <template>
     <footer>
-        <P>Footer della pagina</P>
+        <p>Footer della pagina</p>
     </footer>
 </template>
 
 <script>
-export default {
-    name: "Footer"
-}
+    export default {
+        name: 'Footer',
+    }
+
 </script>
 
-<style lang="sccs">
+<style lang="scss">
+  @import "../assets/styles/general.scss";
+
 
 </style>
