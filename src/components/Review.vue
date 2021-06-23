@@ -127,6 +127,13 @@
             display: block;
             .text-container{
                 width: 50%;
+                &:hover{
+                    top: -5px;
+                    right: -5px;
+                    width:60%;
+                    background-color: black;
+                    height: 102%;   
+                }
             }
             .img-container{
                 width:50%;

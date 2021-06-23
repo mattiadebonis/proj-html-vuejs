@@ -11,6 +11,7 @@
             <!-- /left summary -->
 
             <div class="right-summary">
+                <img src="../assets/images/info22x.jpg" alt="">
                 <p class="subtitle-call">california rolls - $22</p>
             </div>
 
@@ -75,10 +76,15 @@
             }
         } 
         .right-summary{
-            position: relative;
-            background-size: cover;
-            background-image: url("../assets/images/info22x.jpg");
-            background-position: center;
+            
+            img{
+                width: 100%;     
+                &:hover{
+                    box-shadow: 1px 1px 20px black;
+                    transition: box-shadow 0.3s;
+                }
+            }
+            
             p{
                 text-transform: uppercase;
                 position:absolute;
