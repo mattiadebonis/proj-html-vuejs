@@ -1,0 +1,37 @@
+.container-call{
+    .up-divider-call{
+        display:inline-block;
+        width:25px;
+        margin: 3px 20px;
+    }
+    
+    .subtitle-call{
+        display: inline;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+    
+    .title-call{    
+        text-transform: uppercase;
+        margin: 20px 0 20px 60px;
+        
+    }
+
+    .description-call{
+        margin: 20px 0 20px 60px;
+        line-height: 20x;
+    }
+    
+    .button-call{
+        margin: 20px 0 0 60px;
+        padding: 10px 30px;
+        background-color: none;
+        border: 1px solid white;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+}
+
