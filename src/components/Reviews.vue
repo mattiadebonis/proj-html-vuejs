@@ -61,7 +61,7 @@
             font-family: 'Lora', serif;
             font-size: 24px;
             color: gray;
-            margin-bottom:30px;
+            margin-bottom:45px;
         }
         hr{
             display: inline;
