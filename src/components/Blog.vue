@@ -23,14 +23,14 @@ import Post from "./Post.vue"
                     },
                     {
                         img:"blog72x.jpg",
-                        title:"The best coffee in town",
+                        title:"Discover our new menu",
                         user: "admin", 
                         date: "2020-07-01",
                         category: "News"
                     },
                     {
                         img:"blog82x.jpg",
-                        title:"The best coffee in town",
+                        title:"We now accept square",
                         user: "admin", 
                         date: "2020-07-01",
                         category: "News"

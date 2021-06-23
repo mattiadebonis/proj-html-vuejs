@@ -15,11 +15,13 @@
 
                 <!-- text container -->
                 <div class="text-container">
-                    <p>{{item.author}}</p>
-                    <h4>{{item.newspaper}}</h4>
-                    <p>{{item.rating}}</p>
-                    <p>{{item.intro}}</p>
-                    <a :href="item.link">Read the article</a>
+                    <div class="container-call">
+                        <p class="subtitle-call">{{item.author}}</p>
+                        <h3>{{item.newspaper}}</h3>
+                        <p>{{item.rating}}</p>
+                        <p>{{item.intro}}</p>
+                        <a :href="item.link">Read the article</a>
+                    </div>
                 </div>
                 <!-- /text container -->       
             </li>
@@ -53,41 +55,51 @@
 
 <style lang="scss">
     @import "../assets/styles/variable.scss";
+    @import "../assets/styles/callToAction.scss";
+
     
     ul{
         list-style: none;      
-        display: flex;
         width: 100%;
         justify-content: center;
+        color:white;
+
         li{
-
-            color:white;
-            display: inline;
+            margin: 0 15px 15px 0;
             position: relative;
-
             .img-container{
-                width: 100%;
                 img{
                     width: 100%;
-                }    
+                }
             }
             .text-container{
                 display:inline;
                 position:absolute;
                 top: 0;
-                right: 10px;
-                padding: 50px;
+                right: 10px;       
+            } 
+        }
+        
+        .container-review-full{
+            width: calc(100% - 15px);
+            background-color: black;
+            display: block;
+            .text-container{
+                width: 50%;
             }
-            
-            .container-review-full{
-                width:100%;
-                background-color: black;
-
-            }       
-            .container-review-half{
+            .img-container{
                 width:50%;
                 
-            }       
+            }
+        }       
+        .container-review-half{
+            width: calc(50% - 15px);
+
+            flex: wrap;
+            display: inline-block;
+            .img-container{
+                width:100%;
+            }
         }
     }
 .clearfix::after {
