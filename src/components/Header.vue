@@ -20,8 +20,8 @@
                         <li 
                             v-for="(item, index) in menuHeader" 
                             :key="index">
-                                <a href="#">
-                                    {{item}}
+                                <a :href="item.link">
+                                    {{item.title}}
                                 </a>
                             </li>
                     </ul>
@@ -68,7 +68,7 @@
         height: 500px;
         position: relative;
         color:white;
-
+        
         .header-right,
         .header-left{
             display: inline-block;
@@ -85,6 +85,15 @@
             background-size: cover;
             background-position: fixed;
             background-repeat: no-repeat;
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(to top, transparent 0%, black 100%);
+            }
         }
              
         .content-header{

@@ -1,9 +1,12 @@
 <template>
     <footer>
+        <!-- top footer -->
         <div class="top-footer">
             <div>
                 <img src="../assets/images/logo-restaurant-2x.png" alt="logo-footer">
                 <p>Quam eu proin sit massa condimentum. Volupat non pulvinar aliquet nunc. Quam eu proin sit massa condimentum.</p>
+
+                <!--social buttons -->
                 <ul>
                     <li><a href="#" class="social-button">
                         <i class="fab fa-facebook-f"></i></a></li>
@@ -12,14 +15,16 @@
                     <li><a href="#" class="social-button"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="#" class="social-button"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
-
+                <!--/social buttons -->
             </div>
-            
-
         </div>
+        <!-- /top footer -->
+
+        <!-- bottom footer -->
         <div class="bottom-footer">
             <p>Copyright 2012 - 2019 avada | All Rights Reserved | Powered by <strong>Wordpress | ThemeFusion</strong></p>
         </div>
+        <!-- /bottom footer -->
         
   
     </footer>

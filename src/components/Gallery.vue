@@ -1,6 +1,6 @@
 <template>
     <section class="wdt-100 gallery-container">
-        <img src="../assets/images/page52x.jpg" alt="">
+        <img src="../assets/images/page52x.jpg" alt="kung-pad">
         <p>Kung pad chicken - $32</p>
     </section>
 </template>
@@ -23,7 +23,7 @@
         }
         p{
             position: absolute;
-            bottom:5px;
+            bottom:10px;
             right: 50%;
             transform: translate(50%, -0%);
             color:white;

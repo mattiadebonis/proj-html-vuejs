@@ -1,10 +1,12 @@
 <template>
     <main class="wdt-100">
         <Summary />
+        <!-- send data to first call to action -->
         <CallToAction :item ="callMenu" />
         <Reviews />
         <Gallery />
         <Blog />
+        <!-- send data to the second call to action -->
         <CallToAction :item="callDelivery" />
         <Menus />
         <Dish />
@@ -34,6 +36,7 @@ import Dish from "./Dish.vue";
         },
         data: function(){
             return{
+                //data first call to action
                 callMenu: {
                     img:"slider32x.jpg",
                     title: "The best table in town",
@@ -41,6 +44,7 @@ import Dish from "./Dish.vue";
                     description: "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempora a et nils, ac felis.",
                     button: "explore the menu"
                 },
+                //data first second to action
                 callDelivery: {
                     img:"slider72x-scaled.jpg",
                     title: "Enjoy your meal at home",

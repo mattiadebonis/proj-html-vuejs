@@ -1,5 +1,6 @@
 <template>
     <section id="menu">
+        <!-- send menus to Menu component -->
         <Menu  :item="menus"/>
     </section>
 </template>
@@ -14,6 +15,7 @@
         },
         data : function (){
             return{
+                //menus
                 menus: [
                     {
                         title: "Hors d'oeuvres",
@@ -21,22 +23,26 @@
                             {
                                 name: "Ahi salmon nigiri",
                                 description: "Eget vulputate vitae quis rutrum blandit sed. Quam nulla soit lacinia",
-                                price: 48
+                                price: 48,
+                                link:"#"
                             },
                             {
                                 name: "Umi masu salad",
                                 description: "Mollis omare sit sapien, sodales. Cursus duis proin semper quisque.",
-                                price: 21
+                                price: 21,
+                                link:"#"
                             },
                             {
                                 name: "Temaki uiz creb",
                                 description: "Ae vel risus omare seneetus placerat duis amet disctumst tellus. ",
-                                price: 32
+                                price: 32,
+                                link:"#"
                             },
                             {
                                 name: "California rolls",
                                 description: "Ae vel risus omare seneetus placerat duis amet disctumst tellus. ",
-                                price: 22
+                                price: 22,
+                                link:"#"
                             },
 
                         ]
@@ -47,22 +53,26 @@
                             {
                                 name: "Braised abalone",
                                 description: "Mollis omare sit sapien, sodales. Cursus duis proin semper quisque.",
-                                price: 52
+                                price: 52,
+                                link:"#"
                             },
                             {
                                 name: "Twiced cooked pork",
                                 description: "Ae vel risus omare seneetus placerat duis amet disctumst tellus. ",
-                                price: 21
+                                price: 21,
+                                link:"#"
                             },
                             {
                                 name: "Kung pao chicken",
                                 description: "Quis duis sit dictum aliquam a velit enim. Tellus in sit augue aliquam",
-                                price: 32
+                                price: 32,
+                                link:"#"
                             },
                             {
                                 name: "Char siu e sushis ",
                                 description: "Feugiat rhoncus ipsum tristique prurs diam, et dolor molestie.  ",
-                                price: 48
+                                price: 48,
+                                link:"#"
                             },
 
                         ]

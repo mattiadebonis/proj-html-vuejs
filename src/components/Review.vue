@@ -17,8 +17,13 @@
                 <!-- text container -->
                 <div class="text-container">
                     <div class="container-call">
+                        <!-- author -->
                         <p class="subtitle-call">{{item.author}}</p>
+
+                        <!-- newspaper -->
                         <h3>{{item.newspaper}}</h3>
+
+                        <!-- rating -->
                         <i
                             v-for= "(n,index) in 5"
                             :key= "index" 
@@ -26,9 +31,9 @@
                             :class="getRating(item.rating,index)"
                         ></i>
                         <hr>
-
+                        <!-- description -->
                         <p class="description-call description-review">{{item.intro}}</p>
-                        
+                        <!-- button -->
                         <a :href="item.link" class="button-call button-review">Read the article</a>
                     </div>
                 </div>
@@ -48,9 +53,11 @@
         },
         methods: {
             componeUrlImg : function (nameFile){
+                //compone url img
                 return require("../assets/images/"+ nameFile);
             },
             isFull : function(full){
+                //check if reviews require a full width visualization and return full width css class
                 if(full==true){
                     return "container-review-full"
                 }else{
@@ -149,16 +156,15 @@
             .img-container{
                 width:100%;
                 &:after{
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: linear-gradient(to top, transparent 0%, black 100%);
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: linear-gradient(to top, transparent 0%, black 100%);
+                }
             }
-            }
-            
         }
     }
 </style>

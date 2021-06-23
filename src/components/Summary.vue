@@ -1,5 +1,6 @@
 <template>
     <section id="summary" class="margin-page">
+        <!-- top summary -->
         <div class="wdt-100 flex">
             <!-- left summary -->
             <div class="left-summary">
@@ -10,13 +11,16 @@
             </div>
             <!-- /left summary -->
 
+            <!-- right summary -->
             <div class="right-summary">
-                <img src="../assets/images/info22x.jpg" alt="">
+                <img src="../assets/images/info22x.jpg" alt="california-roll">
                 <p class="subtitle-call">california rolls - $22</p>
             </div>
-
+            <!-- /right summary -->
         </div>
+        <!-- /top summary -->
         
+        <!-- bottom summary -->
         <div class="bottom-summary flex">
             <div>
                 <img src="../assets/images/sushi-1.png" alt="sushi-1">
@@ -26,20 +30,21 @@
                 <a href="#" class="button-light">Explore the menu</a>
             </div>
             <div>
-                <img src="../assets/images/sushi-2.png" alt="sushi-1">
+                <img src="../assets/images/sushi-2.png" alt="sushi-2">
                 <h4>The best table in town</h4>
                 <hr>
                 <p>Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi otrtor id gravida aliquet.</p>
                 <a href="#" class="button-light">Explore the menu</a>
             </div>
             <div>
-                <img src="../assets/images/sushi-3.png" alt="sushi-1">
+                <img src="../assets/images/sushi-3.png" alt="sushi-3">
                 <h4>The best table in town</h4>
                 <hr>
                 <p>Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi otrtor id gravida aliquet.</p>
                 <a href="#" class="button-light">Explore the menu</a>
             </div>
         </div>
+        <!-- /bottom summary -->
     </section>
 </template>
 
@@ -56,6 +61,8 @@
     @import "../assets/styles/callToAction.scss";
     #summary{
         color: gray;
+
+        //TOP SUMMARY
         .left-summary,
         .right-summary{
             width: 40%;
@@ -76,9 +83,11 @@
             }
         } 
         .right-summary{
-            
+            position:relative;
             img{
-                width: 100%;     
+                width: 100%;  
+                
+                
                 &:hover{
                     box-shadow: 1px 1px 20px black;
                     transition: box-shadow 0.3s;
@@ -88,17 +97,19 @@
             p{
                 text-transform: uppercase;
                 position:absolute;
-                bottom:10px;
+                bottom:70px;
                 right:50%;
                 transform: translate(50%, 0);
                 font-size: 10px;
                 color: white;
-
             }
         }
+        // /TOP SUMMARY
+
+        //BOTTOM SUMMARY
         .bottom-summary{
             width: 100%;
-            margin: 100px 0;
+            margin: 70px 0;
             div{
                 width:(100% /3);
                 padding: 10px;
@@ -121,7 +132,6 @@
                     border: 0 ;
                     background-color:lightgray;
                     height: 1px;
-                    
                 }
                 
                 p{
@@ -143,8 +153,6 @@
                 }
             }
         }
+        // /BOTTOM SUMMARY
     }
-    
-    
-
 </style>

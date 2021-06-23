@@ -3,18 +3,28 @@
 
         <p>Lastest news & promotions</p>
         <hr>
+        <!-- post -->
         <ul class="flex">
             <li 
                 v-for="(item,index) in publishedPost"
                 :key="index"
             >
+                <!-- image -->
                 <img :src="componeUrlImg(item.img)" alt="">
-                <h4 class="title-post">{{item.title}}</h4>
+
+                <a :href="item.link">
+                    <!-- link symbol -->
+                    <i class="fas fa-link"></i>
+                    <!-- title -->
+                    <h4 class="title-post">{{item.title}}</h4>
+                </a>
+                <!-- info -->
                 <p class="info-post">By {{item.user}} | {{item.date}} | Categories {{item.category}}</p>    
+                <!-- info on hover -->
                 <p class="info-post-hover">{{item.category}}</p>    
             </li>
         </ul>
-
+        <!-- /post -->    
     </section>
 </template>
 
@@ -26,11 +36,11 @@
         },
         methods: {
             componeUrlImg : function (nameFile){
+                ///compone url img
                 return require("../assets/images/"+ nameFile);
 
             }
-        } 
-        
+        }   
     }
 </script>
 
@@ -56,12 +66,18 @@
             li{
                 color: black;
                 margin: 0 20px;
-                .info-post-hover{
+                .info-post-hover,
+                i{
                     display: none;
                 }
+                a{
+                    color:black;
+                }
+                //on post hover
                 &:hover{
                     position:relative;
                     img{
+                        position:relative;
                         width:100%;
                         height:100%;
                         &:after{
@@ -75,24 +91,34 @@
                         }
                     }
                     .title-post,
-                    .info-post-hover{
+                    .info-post-hover,
+                    i{
                         position:absolute;
                         top: 50%;
                         left:50%;
                         transform: translate(-50%, -50%);
                         color: white;
                     }
+                    i{
+                        display:inline;
+                        color: white;
+                        margin:10px;
+                        top: 45%;
+
+                    }
                     .title-post{
                         font-size: 24px;
                     }
                     .info-post-hover{
                         display: inline;
+                        top: 60%;
                     }
                     .info-post{
                         display: none;
-                        
                     }
                 }
+                // /on post hover
+
                 .title-post{
                     margin: 22px 0 8px;
                 }

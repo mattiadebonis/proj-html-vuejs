@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- send menu to header -->
     <Header
       :menuHeader = "menu"
     />
@@ -17,15 +18,36 @@ export default {
   name: 'App',
   data: function(){
     return{
+      //site menu
       menu : [
-        "Home",
-        "Culinary history",
-        "Our team",
-        "Our menu",
-        "Take out", 
-        "Bulletin",
-        "Reservation",
-        "Carrello"
+        {
+          title:"Home",
+          link: "#"
+        },
+        {
+          title:"Culinary history",
+          link: "#"
+        },
+        {
+          title:"Our team",
+          link: "#"
+        },
+        {
+          title:"Our menu",
+          link: "#"
+        },
+        {
+          title:"Take out",
+          link: "#"
+        },
+        {
+          title:"Reservation",
+          link: "#"
+        },
+        {
+          title:"Carrello",
+          link: "#"
+        }
       ]
     }
   },

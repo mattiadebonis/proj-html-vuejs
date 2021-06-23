@@ -1,6 +1,7 @@
 <template>
     <section id="dish">
         <img src="../assets/images/hero42x.jpg" alt="">
+        <!-- containaer text -->
         <div class="container-call dish-container">
             <div class="name-price">
                 <h2 class="title-call">Braised Abalone</h2>
@@ -10,6 +11,7 @@
             <p class="description-call">Pretium accumsan porttitor viverra leo gravida mollis imperdiet. Fringilla nibh pharetra sociis leo amet.</p>
             <a class="button-call" href="#">View in the menu</a>
         </div>    
+        <!-- /containaer text -->
     </section>
 </template>
 
@@ -24,7 +26,6 @@ export default {
     #dish{
         width:100%;
         height: 630px;
-
         position: relative;
         
         .dish-container{
@@ -43,18 +44,13 @@ export default {
                     margin: 20px 0;
                 }
             }
-            h2,
-            span,
-            p,
-            a,
-            hr{
+            h2,span,p,a,hr{
+                //bugfix
                 margin-left: 20px;
             }
             hr{
                 width:50px;
             }
-            
-
         }
         img{
             width:100%;

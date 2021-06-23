@@ -1,32 +1,37 @@
 <template>
     <section id="menu" class="flex">
-        
+            <!-- menu -->
             <div 
                 v-for="(menu,indexMenu) in item"
                 :key="indexMenu"
                 :class="isMain(menu.title)"
                 class="menu-container"
             >
-                
+                <!-- menu title -->
                 <h2>{{menu.title}}</h2>
+
+                <!-- dish -->
                 <ul>
                     <li
                         v-for="(dish,indexDish) in menu.dishes"
                         :key="indexDish"
                     >
                         <div class="name-price-row">
-                            <a href="#">
+                            <a :href="item.link">
+                                <!-- dish name -->
                                 <h4>{{dish.name}}</h4>
                             </a>
+                            <!-- dish price -->
                             <span>${{dish.price}}</span>
                         </div>
+
+                        <!-- dish description -->
                         <p class="dish-description">{{dish.description}}</p>
                     </li>
                 </ul>
+                <!-- dish -->
             </div>
-        
-        
-
+            <!-- menu -->
     </section>
 </template>
 
@@ -38,6 +43,7 @@
         },
         methods:{
             isMain : function(title){
+                //check if menu is Main
                 if (title.includes("Main")){
                     return "main-menu";
                 }else{
@@ -82,6 +88,7 @@
                 }
             }
         }
+        //main menu
         .main-menu{
             position: static;
             background-color:black;
@@ -94,9 +101,10 @@
             a{
                 color:white;
             }
-            
         }
+        // /main menu
         
+        //normal menu
         .normal-menu{
             background-color:lightgray;
             color:black;
@@ -110,6 +118,7 @@
                 color: black;
             }
         }
+        // /normal menu
     }
     
 
