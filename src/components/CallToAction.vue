@@ -61,7 +61,7 @@
         width: $wdt-40;
         background-color:black;
         color: white;
-        padding: 100px;
+        padding: 100px 0;
     }
 
 </style>
