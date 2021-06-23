@@ -65,7 +65,7 @@
     @import "../assets/styles/callToAction.scss";
 
     header{
-        height: 525px;
+        height: 500px;
         position: relative;
         color:white;
 
@@ -81,6 +81,7 @@
         .header-right{
             width: $wdt-60;
             background-image: url("../assets/images/slider52x.jpg");
+            background-position: center;
             background-size: cover;
             background-position: fixed;
             background-repeat: no-repeat;
@@ -109,6 +110,11 @@
                     
                     width: $wdt-60;
                     ul{
+                        width: 100%;
+                        margin: 0 auto;   
+                        text-align: center;
+
+
                         li{
                             font-size: 10px;
                             display: inline-block;
@@ -126,7 +132,7 @@
             }
             .jumbotron{
                 width: $wdt-40;
-                padding: 20px;
+                padding: 10px;
             }
         }
         

@@ -1,5 +1,7 @@
 <template>
-    <section class="margin-page">
+    <section id="review" class="margin-page">
+        <p class="title-review">What critics are saying about us</p>
+        <hr>
         <Review :publishedReviews="reviews"/>
     </section>
 </template>
@@ -51,6 +53,26 @@
 
 <style lang="scss">
     @import "../assets/styles/variable.scss";
+    #review{
+        .title-review{
+            text-align: center;
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            color: gray;
+            margin-bottom:30px;
+        }
+        hr{
+            display: inline;
+            position:absolute;
+            right: 50%;
+            transform:translate(50%,0);
+            width: 60px;
+            border: 0 ;
+            background-color:lightgray;
+            height: 1px;
+                        
+        }
+    }
     
 
 </style>

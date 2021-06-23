@@ -5,11 +5,12 @@
                 <img src="../assets/images/logo-restaurant-2x.png" alt="logo-footer">
                 <p>Quam eu proin sit massa condimentum. Volupat non pulvinar aliquet nunc. Quam eu proin sit massa condimentum.</p>
                 <ul>
-                    <li><a href="#" class="social-button">F</a></li>
-                    <li><a href="#" class="social-button">T</a></li>
-                    <li><a href="#" class="social-button">Y</a></li>
-                    <li><a href="#" class="social-button">I</a></li>
-                    <li><a href="#" class="social-button">L</a></li>
+                    <li><a href="#" class="social-button">
+                        <i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="social-button"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="social-button"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" class="social-button"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="social-button"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
 
             </div>
@@ -62,12 +63,18 @@
                     li{
                         display: inline;
                         .social-button{
+                            color: black;
                             background-color: white;
-                            height: 15px;
-                            width: 15px;
-                            margin: 20px;
+                            font-size: 12px;
+                            height: 20px;
+                            width: 20px;
                             padding: 15px;
-                            border-radius: 100px;
+                            border-radius: 50px;
+                            &:hover{
+                                background-color: gray;
+                                transition: background-color 0.2s ease;
+
+                            }
                             
                         }
                     }

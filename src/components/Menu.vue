@@ -15,7 +15,9 @@
                         :key="indexDish"
                     >
                         <div class="name-price-row">
-                            <a href="#">{{dish.name}}</a><h4></h4>
+                            <a href="#">
+                                <h4>{{dish.name}}</h4>
+                            </a>
                             <span>${{dish.price}}</span>
                         </div>
                         <p class="dish-description">{{dish.description}}</p>
@@ -47,6 +49,9 @@
 </script>
 
 <style lang="scss">
+
+    @import "../assets/styles/general.scss";
+    
     #menu{
         position: relative;
         width: 90%;
@@ -55,10 +60,10 @@
             display: inline-block;
             margin: 20px 0;
             padding: 50px;
-            
             width:calc(100%/3);
             h2{
                 margin-bottom: 60px;
+                
             }
             ul{
                 li{
@@ -86,11 +91,24 @@
             background-image: linear-gradient(to bottom, black, rgba(0,0,0,0.2)), url("../assets/images/misc22x.jpg");
             background-size: cover;       
             background-repeat: no-repeat;
+            a{
+                color:white;
+            }
+            
         }
         
         .normal-menu{
             background-color:lightgray;
             color:black;
+            a{
+                color:black;
+            }
+            .dish-description{
+                color: black;
+            }
+            .name-price-row{
+                color: black;
+            }
         }
     }
     

@@ -23,13 +23,16 @@ export default {
     @import "../assets/styles/general.scss";
     #dish{
         width:100%;
+        height: 630px;
+
         position: relative;
+        
         .dish-container{
-            width: 26%;
+            width: 350px;
             padding: 50px;
             position: absolute;
             top: 100px;
-            left: 200px;
+            left: 10%;
             background-color: black;
             color: white;
             .name-price{
@@ -55,8 +58,8 @@ export default {
         }
         img{
             width:100%;
+            height: 100%;
             object-fit: cover;
-            height: 600px;
         }
     }
 

@@ -1,5 +1,5 @@
 <template>
-    <section class="margin-page">
+    <section id="summary" class="margin-page">
         <div class="wdt-100 flex">
             <!-- left summary -->
             <div class="left-summary">
@@ -53,75 +53,87 @@
 <style  lang="scss">
     @import "../assets/styles/general.scss";
     @import "../assets/styles/callToAction.scss";
-
-    .left-summary,
-    .right-summary{
-        width: 45%;
-        margin: 0 auto;
-    }
-    .left-summary{
-        padding-right: 50px;
-        p{
-            font-size:14px;
-            line-height: 22px;
-        }   
-        .signature{
-            margin: 25px 0;
-            width: 100px;
+    #summary{
+        color: gray;
+        .left-summary,
+        .right-summary{
+            width: 40%;
+            margin: 0 auto;
         }
-    } 
-    .right-summary{
-        position: relative;
-        background-size: cover;
-        background-image: url("../assets/images/info22x.jpg");
-        p{
-            text-transform: uppercase;
-            position:absolute;
-            bottom:10px;
-            right:50%;
-            transform: translate(50%, 0);
-            font-size: 10px;
-            color: white;
-
-        }
-    }
-    .bottom-summary{
-        width: 100%;
-        margin: 100px 0;
-        div{
-            width:(100% /3);
-            padding: 10px;
-            text-align: center;
-            position: relative;
-            
-            hr{
-                display: inline;
-                position:absolute;
-                right: 50%;
-                transform:translate(50%,0);
-                width: 50px;
-                border-color: lightgray;
-            }
-            img{
-                width: 70px;
-                
-            }
+        .left-summary{
+            padding-right: 50px;
             p{
-                margin: 42px 0;
-                font-size:12px;
+                font-size:14px;
                 line-height: 22px;
+            }   
+            h2{
+                color: black;
             }
-            .button-light{
-                padding: 10px 30px;
-                background-color: none;
-                border: 1px solid gray;
-                text-decoration: none;
-                color: gray;
+            .signature{
+                margin: 25px 0;
+                width: 100px;
+            }
+        } 
+        .right-summary{
+            position: relative;
+            background-size: cover;
+            background-image: url("../assets/images/info22x.jpg");
+            background-position: center;
+            p{
                 text-transform: uppercase;
-                font-size: 12px;
-                &:hover{
-                    background-color: gray;
-                    color: white;
+                position:absolute;
+                bottom:10px;
+                right:50%;
+                transform: translate(50%, 0);
+                font-size: 10px;
+                color: white;
+
+            }
+        }
+        .bottom-summary{
+            width: 100%;
+            margin: 100px 0;
+            div{
+                width:(100% /3);
+                padding: 10px;
+                text-align: center;
+                position: relative;
+                img{
+                    width: 70px;
+                    
+                }
+                h4{
+                    margin: 20px 0;
+                    color: black;
+                }
+                hr{
+                    display: inline;
+                    position:absolute;
+                    right: 50%;
+                    transform:translate(50%,0);
+                    width: 60px;
+                    border: 0 ;
+                    background-color:lightgray;
+                    height: 1px;
+                    
+                }
+                
+                p{
+                    margin: 42px 0;
+                    font-size:12px;
+                    line-height: 22px;
+                }
+                .button-light{
+                    padding: 10px 30px;
+                    background-color: none;
+                    border: 1px solid lightgray;
+                    text-decoration: none;
+                    color: gray;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    &:hover{
+                        border-color: black;
+                    }
                 }
             }
         }

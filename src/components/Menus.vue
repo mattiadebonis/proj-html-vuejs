@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="menu">
         <Menu  :item="menus"/>
     </section>
 </template>
@@ -60,8 +60,8 @@
                                 price: 32
                             },
                             {
-                                name: "Char siu e sushis ipsum tristique prurs diam, et dolor molestie.",
-                                description: "Feugiat rhoncus  ",
+                                name: "Char siu e sushis ",
+                                description: "Feugiat rhoncus ipsum tristique prurs diam, et dolor molestie.  ",
                                 price: 48
                             },
 
@@ -102,5 +102,7 @@
 </script>
 
 <style lang="scss">
-
+    #menu{
+        margin-top:120px;
+    }
 </style>

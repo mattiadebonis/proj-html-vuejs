@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
 .container-call{
     padding: 0 50px;
+
     .up-divider-call{
+        font-family: 'Work Sans', sans-serif;
         display:inline-block;
-        width:25px;
+        border: 0 ;
+        background-color: white;
+        height: 0.5px;
+        width: 30px;
         margin: 3px 20px;
     }
     
@@ -15,7 +24,6 @@
     .title-call{    
         text-transform: uppercase;
         margin: 20px 0 20px 60px;
-        
     }
 
     .description-call{
@@ -32,7 +40,7 @@
         text-decoration: none;
         color: white;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 10px;
         &:hover{
             background-color: white;
             color: black;

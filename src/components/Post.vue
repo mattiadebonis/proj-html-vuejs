@@ -1,7 +1,7 @@
 <template>
     <section id="blog" class="wdt-100 ">
 
-        <p>Lastest news e promotions</p>
+        <p>Lastest news & promotions</p>
         <hr>
         <ul class="flex">
             <li 
@@ -42,6 +42,8 @@
         padding: 60px;
         p{
             font-size: 24px;
+            color:gray;
+            font-family: 'Lora', serif;
         }
         hr{
             width: 70px;

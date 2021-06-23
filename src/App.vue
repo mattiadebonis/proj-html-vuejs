@@ -40,7 +40,9 @@ export default {
 
 <style lang="scss">
   @import "./assets/styles/general.scss";
+  @import "~@fortawesome/fontawesome-free/css/all.min.css"; 
 
+  
   #app{
     margin: 0 auto;
 
