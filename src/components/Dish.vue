@@ -1,17 +1,15 @@
 <template>
     <section id="dish">
         <img src="../assets/images/hero42x.jpg" alt="">
-        <div class="dish-container">
+        <div class="container-call dish-container">
             <div class="name-price">
-                <h3 class="title-call">Braised Abalone</h3>
+                <h2 class="title-call">Braised Abalone</h2>
                 <span>$52</span>
-                <hr>
-                <p class="description-call">Pretium accumsan porttitor viverra leo gravida mollis imperdiet. Fringilla nibh pharetra sociis leo amet.</p>
-                <a class="button-call" href="#">View in the menu</a>
             </div>
-            
-            <span></span>
-        </div>
+            <hr>
+            <p class="description-call">Pretium accumsan porttitor viverra leo gravida mollis imperdiet. Fringilla nibh pharetra sociis leo amet.</p>
+            <a class="button-call" href="#">View in the menu</a>
+        </div>    
     </section>
 </template>
 
@@ -27,6 +25,8 @@ export default {
         width:100%;
         position: relative;
         .dish-container{
+            width: 26%;
+            padding: 50px;
             position: absolute;
             top: 100px;
             left: 200px;
@@ -35,7 +35,23 @@ export default {
             .name-price{
                 display:flex;
                 justify-content: space-between;
+                align-items: flex-start;
+                span{
+                    margin: 20px 0;
+                }
             }
+            h2,
+            span,
+            p,
+            a,
+            hr{
+                margin-left: 20px;
+            }
+            hr{
+                width:50px;
+            }
+            
+
         }
         img{
             width:100%;
