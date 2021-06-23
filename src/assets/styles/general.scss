@@ -2,12 +2,13 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+    font-family: 'Lora', serif;}
 
-.margin-page{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');.margin-page{
     width:80%;
     margin:10%;
-
 }
 
 .flex{
@@ -20,4 +21,17 @@
 
 h1,h2,h3,h4{
     text-transform:uppercase;
+    font-family: 'Bebas Neue', cursive;
+}
+h1{
+    font-size:46px;
+}
+h6{
+    font-family: 'Work Sans', sans-serif;
+}
+
+a{
+    font-family: 'Work Sans', sans-serif;
+
+    text-decoration: none;
 }

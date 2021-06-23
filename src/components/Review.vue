@@ -1,15 +1,29 @@
 <template>
     <section class="margin-page">
-        <ul class="reviews">
-            <li v-for="(item, index) in publishedReviews" 
-            :key="index">
-                <img :src="componeUrlImg(item.img)" alt="">
-                <p>{{item.author}}</p>
-                <h4>{{item.newspaper}}</h4>
-                <p>{{item.rating}}</p>
-                <p>{{item.intro}}</p>
-                <a :href="item.link">Read the article</a>
+        <ul>
+            <!-- review -->
+            <li 
+                v-for="(item, index) in publishedReviews" 
+                :key="index"
+                :class="isFull(item.fullWidth)"
+            >
+                <!-- img container -->
+                <div class="img-container">
+                    <img :src="componeUrlImg(item.img)" alt="">
+                </div>
+                <!-- /img container -->
+
+                <!-- text container -->
+                <div class="text-container">
+                    <p>{{item.author}}</p>
+                    <h4>{{item.newspaper}}</h4>
+                    <p>{{item.rating}}</p>
+                    <p>{{item.intro}}</p>
+                    <a :href="item.link">Read the article</a>
+                </div>
+                <!-- /text container -->       
             </li>
+            <!-- review -->
         </ul>
     </section>
 </template>
@@ -23,9 +37,14 @@
         },
         methods: {
             componeUrlImg : function (nameFile){
-                const folder = "../assets/images/"
-                var url = folder + nameFile;
-                return url;
+                return require("../assets/images/"+ nameFile);
+            },
+            isFull : function(full){
+                if(full==true){
+                    return "container-review-full"
+                }else{
+                    return "container-review-half"
+                }
             }
         } 
     }
@@ -35,20 +54,47 @@
 <style lang="scss">
     @import "../assets/styles/variable.scss";
     
-    .reviews{
-        list-style: none;            
+    ul{
+        list-style: none;      
+        display: flex;
+        width: 100%;
+        justify-content: center;
         li{
-            background-color: black;
+
             color:white;
-            padding: 50px;
-            margin:5px;
+            display: inline;
+            position: relative;
+
+            .img-container{
+                width: 100%;
+                img{
+                    width: 100%;
+                }    
+            }
+            .text-container{
+                display:inline;
+                position:absolute;
+                top: 0;
+                right: 10px;
+                padding: 50px;
+            }
             
-            img{
-                width: 100px;
-            }    
+            .container-review-full{
+                width:100%;
+                background-color: black;
+
+            }       
+            .container-review-half{
+                width:50%;
+                
+            }       
         }
     }
-    
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
     
 
 </style>

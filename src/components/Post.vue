@@ -1,9 +1,9 @@
 <template>
-    <section id="blog" class="wdt-100 margin-page">
+    <section id="blog" class="wdt-100 ">
 
         <p>Lastest news e promotions</p>
         <hr>
-        <ul class="flex">
+        <ul class="">
             <li 
                 v-for="(item,index) in publishedPost"
                 :key="index"
@@ -25,9 +25,8 @@
         },
         methods: {
             componeUrlImg : function (nameFile){
-                const folder = "../assets/images/"
-                var url = folder + nameFile;
-                return url;
+                return require("../assets/images/"+ nameFile);
+
             }
         } 
         
@@ -38,6 +37,7 @@
   @import "../assets/styles/general.scss";
 
     #blog{
+        width:100%;
         text-align: center;
         p{
             font-size: 24px;
@@ -51,7 +51,7 @@
             li{
                 margin: 0 20px;
                 img{
-                    height: 400px;
+                    width: 100px;
                 }
                 p{
                     font-size: 12px;

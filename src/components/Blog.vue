@@ -15,21 +15,21 @@ import Post from "./Post.vue"
             return{
                 posts : [
                     {
-                        img:"sushi-1.png",
+                        img:"blog92x.jpg",
                         title:"The best coffee in town",
                         user: "admin", 
                         date: "2020-07-01",
                         category: "News"
                     },
                     {
-                        img:"",
+                        img:"blog72x.jpg",
                         title:"The best coffee in town",
                         user: "admin", 
                         date: "2020-07-01",
                         category: "News"
                     },
                     {
-                        img:"",
+                        img:"blog82x.jpg",
                         title:"The best coffee in town",
                         user: "admin", 
                         date: "2020-07-01",

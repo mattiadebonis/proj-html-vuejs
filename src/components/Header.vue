@@ -19,7 +19,11 @@
                     <ul>
                         <li 
                             v-for="(item, index) in menuHeader" 
-                            :key="index">{{item}}</li>
+                            :key="index">
+                                <a href="#">
+                                    {{item}}
+                                </a>
+                            </li>
                     </ul>
                     <!-- /menu -->
                 </div>
@@ -31,7 +35,7 @@
             <div class="jumbotron">
                 <div class="container-call">
                     <hr class="up-divider-call">
-                    <p class="subtitle-call">The best table in town</p>
+                    <h6 class="subtitle-call">The best table in town</h6>
                     <h1 class="title-call">Fine dining experience</h1>
                     <p class="description-call">Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempora a et nils, ac felis.</p>
                     <a href="#" class="button-call">explore the menu</a>
@@ -92,15 +96,17 @@
                 height: 100px;
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 
                 .left-nav{
                     width: $wdt-40;
                     img{
-                        height: 30px;
+                        height: 35px;
                         margin-left: 35px;
                     }
                 }
                 .right-nav{
+                    
                     width: $wdt-60;
                     ul{
                         li{
@@ -108,6 +114,12 @@
                             display: inline-block;
                             margin: 10px;
                             list-style: none;
+                            a{
+                                color:lightgray;
+                                &:active{
+                                    color:white;
+                                }
+                            }
                         }
                     }
                 }   

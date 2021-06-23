@@ -31,9 +31,9 @@
         },
         methods: {
             componeUrlImg : function (nameFile){
-                const folder = "./assets/images/"
-                var url = folder + nameFile;
-                return url;
+                
+                
+                return require("../assets/images/"+ nameFile);
             }
         } 
     }
@@ -44,11 +44,17 @@
     .left-menu,
     .right-menu{
         height: 560px;
+        
     }
 
     .left-menu{
         width: $wdt-60;
         background-size:cover;
+        img{
+            width:100%;
+            height: 100%;
+            object-fit:cover;
+        }
     }
 
     .right-menu{

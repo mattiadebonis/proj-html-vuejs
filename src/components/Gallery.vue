@@ -17,7 +17,9 @@
     .gallery-container{
         position: relative;
         img{
+            width:100%;
             height: 325px;
+            object-fit: cover;
         }
         p{
             position: absolute;

@@ -18,7 +18,7 @@
                     intro: "Non arcu mauris tortor ultrices mollis tellus eusmod fermentum. Habitant amet tincidunt id sapien accumsan sed at. Mmalesuada ullamcorper amet.Pretium pretium dignissim nisi.",
                     img:"blog72x.jpg",
                     link:"#",
-                    width: "important-review"
+                    fullWidth: true
                 },
                 {
                     author:"Mary Maxey",
@@ -27,7 +27,7 @@
                     intro: "Non arcu mauris tortor ultrices mollis tellus eusmod fermentum. Habitant amet tincidunt id sapien accumsan sed.",
                     img:"info52x.jpg",
                     link:"#",
-                    width: "normal-review"
+                    fullWidth: false
 
                 },
                 {
@@ -37,7 +37,7 @@
                     intro: "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus . Nulla porttitor accusan tincidunt.",
                     img:"info12x.jpg",
                     link:"#",
-                    width: "normal-review"
+                    fullWidth: false
 
                 },
             ]
